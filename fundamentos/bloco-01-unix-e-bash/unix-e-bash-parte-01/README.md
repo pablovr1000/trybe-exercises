@@ -12,12 +12,15 @@ SQL
 Resposta -> cat >> skills.txt -> adiciona a lista -> ctrl + d
 
 1. Mostre na tela as 5 primeiras skills do arquivo skills.txt.
+
 head -5 skills.txt
 
 2. Mostre na tela as 4 últimas skills do arquivo skills.txt .
+
 tail -4 skills.txt
 
 3. Apague todos os arquivos que terminem em .txt.
+
 rm -rf *.txt
 
 
