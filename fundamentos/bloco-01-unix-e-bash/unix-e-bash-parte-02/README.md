@@ -50,3 +50,61 @@ cat phrases2.txt countries.txt > bunch_of_things.txt
 11. Ordene o arquivo bunch_of_things.txt.
 
 sort | bunch_of_things.txt ou sort -o bunch_of_things bunch_of_things
+
+Parte II - Permissões
+1. Navegue até a pasta unix_tests;
+cd unix_tests
+
+2. Rode o comando ls -l e veja quais as permissões dos arquivos;
+ls -l
+
+3. Mude a permissão do arquivo bunch_of_things.txt para que todos os usuários possam ter acesso à leitura e escrita, e verifique se está correto com o comando ls -l;
+chmod a+rw bunch_of_things.txt ls-l
+
+4. Tire a permissão de escrita do arquivo bunch_of_things.txt para todos os usuários, verifique se está correto com o comando ls -l;
+chmod a-w bunch_of_things.txt ls-l
+
+5. Volte à permissão do arquivo bunch_of_things.txt para a listada inicialmente utilizando o comando chmod 644 bunch_of_things.txt.
+
+chmod 644 bunch_of_things.txt ls-l
+
+Parte III - Processos & Jobs
+1. Liste todos os processos;
+ps
+
+2. Agora use o comando sleep 30 &;
+30 &
+
+3. Use a listagem de processos para encontrar o PID do processo que está executando o comando sleep 30 e termine a sua execução (mate o processo);
+ps | grep sleep
+kill 55696
+
+4. Execute novamente o comando sleep 30 , mas agora sem o & . Depois, faça com que ele continue executando em background;
+sleep 30 -> ctrl + z -> bg
+
+5. Crie um processo em background que rode o comando sleep por 300 segundos;
+sleep 300 &
+
+6. Crie mais dois processos que rodem o comando sleep por 200 e 100 segundos, respectivamente. Você deve criá-los em foreground (sem usar o & ) e enviá-los para background após cada um começar a executar;
+200
+100
+ctrl + z
+
+7. Verifique que apenas o processo sleep 300 está em execução com o comando jobs. Suspenda a execução desse processo.
+jobs;
+fg %(número do processo)
+ctrl z
+
+8. Retome a execução do processo sleep 100 em background com o comando bg;
+bg %(número do process
+
+9. Termine a execução de todos os processos sleep (mate os processos).
+ps | greep sleep
+kill (número do processo)
+ou
+killall sleep
+
+
+
+
+
