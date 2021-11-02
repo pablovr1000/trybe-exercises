@@ -1,49 +1,40 @@
-Parte II - Manipulação & Busca
+Parte I - Comandos de Input e Output
 
-Na pasta unix_tests , baixe um arquivo com os nomes de todos os países do mundo utilizando o comando curl:
+1. Navegue até a pasta unix_tests ;
+cd unix_tests
 
+2. Crie um arquivo texto pelo terminal com o nome skills2.txt e adicione os valores Internet, Unix e Bash, um em cada linha.
+touch skills2.txt
+cat > skills2.txt (adiciona os itens)
+ou
+echo "internet" >> skills.txt
+echo "unix" >> skills.txt
+echo "bash" >> skills.txt
 
-curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+3. Adicione mais 5 itens à sua lista de skills e depois imprima a lista ordenada no terminal. 
+cat >> skill2.txt (adiciona os itens) + ctrl + d depois sort < skills2.txt
 
-1. Mostre todo o conteúdo do arquivo countries.txt na tela.
-cat countries.txt
+4. Conte quantas linhas tem o arquivo skills2.txt.
+cat skills2.txt | wc -l
 
-2. Mostre o conteúdo de countries.txt, página por página, até encontrar a Zambia.
-less countries.txt
+5. Crie um arquivo chamado top_skills.txt usando o skills2.txt , contendo as 3 primeiras skills em ordem alfabética.
+sort < skills2.txt | head -n 3 > top_skills.txt
 
-3. Mostre novamente o conteúdo de countries.txt página por página, mas agora utilize um comando para buscar por Zambia.
-less countries.txt
-/Zambia
+6. Crie um novo arquivo chamado phrases2.txt pelo terminal e adicione algumas frases de sua escolha.
+touch phrases2.txt
+cat > phrases2.txt (adicona as frases)
 
-4. Busque por Brazil no countries.txt.
-grep Brazil countries.txt
+7. Conte o número de linhas que contêm as letras br .
+grep br phrases2.txt | wc -l
 
-5. Busque novamente por brazil, mas agora utilizando o lower case.
-grep -i brazil countries.txt
+8. Conte o número de linhas que não contêm as letras br .
+grep -v br phrases2.txt | wc -l
 
-Para os próximos exercícios, crie um novo arquivo chamado phrases.txt e adicione algumas frases à sua escolha. Não precisa criar o arquivo pelo terminal.
+9. Adicione dois nomes de países ao final do arquivo phrases2.txt .
+cat >> phrases2.txt (adiciona países depois ctrl +d)
 
+10. Crie um novo arquivo chamado bunch_of_things.txt com os conteúdos dos arquivos phrases2.txt e countries.txt
+cat phrases2.txt countries.txt > bunch_of_things.txt
 
-6. Busque pelas frases que não contenham a palavra fox.
-grep -v fox phrases.txt
-
-7. Conte o número de palavras do arquivo phrases.txt.
-wc -w phrases.txt
-
-8. Conte o número de linhas do arquivo phrases.txt.
-wc -l phrases.txt
-
-9. Crie os arquivos empty.tbt e empty.pdf.
-touch empty.txt empty.pdf
-
-10. Liste todos os arquivos do diretório unix_tests.
-ls -l
-
-11. Liste todos os arquivos que terminem com txt.
-ls -l *txt
-
-12. Liste todos os arquivos que terminem com tbt ou txt.
-ls -l *t?t
-
-13. Acesse o manual do comando ls.
-man ls
+11. Ordene o arquivo bunch_of_things.txt.
+sort | bunch_of_things.txt ou sort -o bunch_of_things bunch_of_things
