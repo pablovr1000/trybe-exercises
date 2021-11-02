@@ -106,27 +106,35 @@ Para os próximos exercícios, crie um novo arquivo chamado phrases.txt e adicio
 
 
 6. Busque pelas frases que não contenham a palavra fox.
+
 grep -v fox phrases.txt
 
 7. Conte o número de palavras do arquivo phrases.txt.
+
 wc -w phrases.txt
 
 8. Conte o número de linhas do arquivo phrases.txt.
+
 wc -l phrases.txt
 
 9. Crie os arquivos empty.tbt e empty.pdf.
+
 touch empty.txt empty.pdf
 
 10. Liste todos os arquivos do diretório unix_tests.
+
 ls -l
 
 11. Liste todos os arquivos que terminem com txt.
+
 ls -l *txt
 
 12. Liste todos os arquivos que terminem com tbt ou txt.
+
 ls -l *t?t
 
 13. Acesse o manual do comando ls.
+
 man ls
 
 
