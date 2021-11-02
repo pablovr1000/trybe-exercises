@@ -16,13 +16,13 @@ echo "bash" >> skills.txt
 
 3. Adicione mais 5 itens à sua lista de skills e depois imprima a lista ordenada no terminal. 
 
-cat >> skill2.txt (adiciona os itens) + ctrl + d depois sort < skills2.txt
+cat >> skills2.txt (adiciona os itens) + ctrl + d depois sort < skills2.txt
 
 4. Conte quantas linhas tem o arquivo skills2.txt.
 
 cat skills2.txt | wc -l
 
-5. Crie um arquivo chamado top_skills.txt usando o skills2.txt , contendo as 3 primeiras skills em ordem alfabética.
+5. Crie um arquivo chamado top_skills.txt usando o skills2.txt, contendo as 3 primeiras skills em ordem alfabética.
 
 sort < skills2.txt | head -n 3 > top_skills.txt
 
@@ -31,15 +31,15 @@ sort < skills2.txt | head -n 3 > top_skills.txt
 touch phrases2.txt
 cat > phrases2.txt (adicona as frases)
 
-7. Conte o número de linhas que contêm as letras br .
+7. Conte o número de linhas que contêm as letras br.
 
 grep br phrases2.txt | wc -l
 
-8. Conte o número de linhas que não contêm as letras br .
+8. Conte o número de linhas que não contêm as letras br.
 
 grep -v br phrases2.txt | wc -l
 
-9. Adicione dois nomes de países ao final do arquivo phrases2.txt .
+9. Adicione dois nomes de países ao final do arquivo phrases2.txt.
 
 cat >> phrases2.txt (adiciona países depois ctrl +d)
 
@@ -99,16 +99,17 @@ sleep 300 &
 200
 100
 ctrl + z
+bg
 
 7. Verifique que apenas o processo sleep 300 está em execução com o comando jobs. Suspenda a execução desse processo.
-jobs;
 
+jobs
 fg %(número do processo)
 ctrl z
 
 8. Retome a execução do processo sleep 100 em background com o comando bg;
 
-bg %(número do process
+bg %(número do processo)
 
 9. Termine a execução de todos os processos sleep (mate os processos).
 
