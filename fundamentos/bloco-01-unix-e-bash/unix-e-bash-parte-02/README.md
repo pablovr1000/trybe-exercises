@@ -70,35 +70,44 @@ chmod 644 bunch_of_things.txt ls-l
 
 Parte III - Processos & Jobs
 1. Liste todos os processos;
+
 ps
 
 2. Agora use o comando sleep 30 &;
+
 30 &
 
 3. Use a listagem de processos para encontrar o PID do processo que está executando o comando sleep 30 e termine a sua execução (mate o processo);
+
 ps | grep sleep
 kill 55696
 
 4. Execute novamente o comando sleep 30 , mas agora sem o & . Depois, faça com que ele continue executando em background;
+
 sleep 30 -> ctrl + z -> bg
 
 5. Crie um processo em background que rode o comando sleep por 300 segundos;
+
 sleep 300 &
 
 6. Crie mais dois processos que rodem o comando sleep por 200 e 100 segundos, respectivamente. Você deve criá-los em foreground (sem usar o & ) e enviá-los para background após cada um começar a executar;
+
 200
 100
 ctrl + z
 
 7. Verifique que apenas o processo sleep 300 está em execução com o comando jobs. Suspenda a execução desse processo.
 jobs;
+
 fg %(número do processo)
 ctrl z
 
 8. Retome a execução do processo sleep 100 em background com o comando bg;
+
 bg %(número do process
 
 9. Termine a execução de todos os processos sleep (mate os processos).
+
 ps | greep sleep
 kill (número do processo)
 ou
