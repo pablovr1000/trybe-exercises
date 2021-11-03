@@ -1,0 +1,31 @@
+h2 {
+    color: red;
+    font-size: 2em;
+}
+
+body {
+    background-color: rgb(142, 194, 153);
+    font-size: 20px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#extinct {
+    background-color: rgb(164, 202, 103);
+}
+
+#Description {
+    color: rgb(226, 19, 19);        
+}
+
+.list-style {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: underline;
+} 
