@@ -1,0 +1,17 @@
+    h1, p {
+        text-align: center;
+    }
+
+    li:hover {
+        background-color: royalblue;
+    }
+
+    li:active {
+        font-family: 'Ceviche One', sans-serif;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    
