@@ -1,0 +1,18 @@
+.img {
+    margin: 50px 0 50px 20px;
+}
+
+.link {
+    color: inherit; /* herda a cor do pai */
+}
+
+.cavalo-marinho {
+    color: blue;
+}
+
+.paragrafos {
+    background-color: rgb(240, 240, 240);
+    width: 500px; /* width é largura */
+    height: 300px;
+    overflow: auto;
+}
