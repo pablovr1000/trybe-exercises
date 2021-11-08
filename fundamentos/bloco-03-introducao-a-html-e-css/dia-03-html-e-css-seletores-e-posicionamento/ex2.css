@@ -1,0 +1,15 @@
+h1, p {
+    text-align: center;
+}
+
+ul:hover, ol:hover {
+    background-color: blue;
+}
+
+li:active {
+    font-family: 'Ceviche one', sans-serif;
+}
+
+li:active {
+    list-style: none;
+}

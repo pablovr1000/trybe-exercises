@@ -1,0 +1,29 @@
+div:hover {
+    border: 5px solid red;
+}
+
+.div1 {
+    background-color: yellow;
+}
+
+.div2 {
+    background-color: green;
+}
+
+.div3 {
+    background-color: orange;
+    height: 100px;
+}
+
+.div4 {
+    background-color: purple;
+}
+
+.div5 {
+    background-color: brown;
+}
+
+h3 {
+    color: white;
+    font-style: italic;
+}
