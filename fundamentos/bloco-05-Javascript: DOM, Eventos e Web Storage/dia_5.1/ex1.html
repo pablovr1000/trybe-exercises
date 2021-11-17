@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class="paragraph-class" id="second-paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class="paragraph-class" id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+        // Recupere o elemento que contém o título da página e faça algo com ele, como alterá-lo para o nome do seu filme favorito.
+        const h2Title = document.querySelector('#page-title');
+        h2Title.innerText = 'tartarugas ninja';
+
+        // Recupere os seus parágrafos via código JavaScript , usando a função getElementsByClassName;
+        const bothParagraphs = document.querySelectorAll('.paragraph-class');
+
+        // Altere algum estilo do primeiro deles.
+        bothParagraphs[0].style.fontSize = '2rem';
+        bothParagraphs[0].style.color = 'orange';
+        bothParagraphs[0].innerText = 'texto oi texto texto texto';
+        bothParagraphs[1].innerText = 'tchau tchau tchau tchau';
+
+        // Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName .
+        const subtitle = document.querySelector('#subtitle');
+        subtitle.style.color = 'blue'; // não precisa colocar o índice pois na variável já está indicando seu índice. 
+
+    </script>
+  </body>
+</html>
