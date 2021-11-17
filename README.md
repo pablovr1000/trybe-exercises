@@ -24,7 +24,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - :white_check_mark: 3-3: _HTML & CSS - Seletores e posicionamento_
 - :white_check_mark: 3-4: _HTML Semântico
 - :white_check_mark: 3-5: _[Projeto - HTML & CSS]()_
-- 
+ 
 ##### Bloco 4: Introdução - JavaScript
 
 - :white_check_mark: 4-1: _JavaScript - Primeiros passos
