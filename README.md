@@ -8,8 +8,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 1: Introdução - Unix & Shell
 
-- :white_check_mark: 1-3: _Unix & Shell- Part 1_
-- :white_check_mark: 1-4: _Unix & Shell- Part 2_
+- :white_check_mark: 1-3: _Unix & Shell - Parte 1_
+- :white_check_mark: 1-4: _Unix & Shell - Parte 2_
 
 ##### Bloco 2: Git & GitHub
 
@@ -19,8 +19,28 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 3: Introdução - HTML & CSS
 
-- :white_check_mark: 3-1: _HTML & CSS - Estruturas de página
+- :white_check_mark: 3-1: _HTML & CSS - Estruturas de página_
 - :white_check_mark: 3-2: _HTML & CSS - Primeiros passos em CSS_
 - :white_check_mark: 3-3: _HTML & CSS - Seletores e posicionamento_
-- :white_check_mark: 3-4: _HTML Semântico
-- [ ] 3-5: _[Projeto - HTML & CSS]()_
+- :white_check_mark: 3-4: _HTML Semântico_
+- :white_check_mark: 3-5: _[Projeto - HTML & CSS]()_
+ 
+##### Bloco 4: Introdução - JavaScript
+
+- :white_check_mark: 4-1: _JavaScript - Primeiros passos_
+- :white_check_mark: 4-2: _JavaScript - Array e loop For_
+- :white_check_mark: 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- :white_check_mark: 4-4: _JavaScript - Objetos e funções_
+- :white_check_mark: 4-5: _[Projeto - Playground Functions]()_
+
+##### Bloco 5: Introdução - JavaScript - Projetos
+
+- :white_check_mark: 5-1: _JavaScript - DOM e seletores_
+- [ ] 5-2: _JavaScript - _Trabalhando com elementos_
+- [ ] 5-3: _JavaScript - _Eventos_
+- [ ] 5-4: _JavaScript - _Web Storage_
+- [ ] 5-5: _[Projeto - Meme Generator]()_
+- [ ] 5-6: _[Projeto - Arte com Pixels]()_
+- [ ] 5-7: _[Projeto - Lista de tarefas]()_
+- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
+- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
