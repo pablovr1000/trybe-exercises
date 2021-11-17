@@ -24,12 +24,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - :white_check_mark: 3-3: _HTML & CSS - Seletores e posicionamento_
 - :white_check_mark: 3-4: _HTML Semântico
 - :white_check_mark: 3-5: _[Projeto - HTML & CSS]
+- 
 ##### Bloco 4: Introdução - JavaScript
 
 - :white_check_mark: 4-1: _JavaScript - Primeiros passos
 - :white_check_mark: 4-2: _JavaScript - Array e loop For
-- :white_check_mark: 4-3: _JavaScript - LÃ³gica de ProgramaÃ§Ã£o e Algoritmos_
-- :white_check_mark: 4-4: _JavaScript - Objetos e funÃ§Ãµes_
+- :white_check_mark: 4-3: _JavaScript - Lógica de Programação e Algoritmos
+- :white_check_mark: 4-4: _JavaScript - Objetos e funções
 - :white_check_mark: 4-5: _[Projeto - Playground Functions]()_
 
 ##### Bloco 5: IntroduÃ§Ã£o - JavaScript - Projetos
