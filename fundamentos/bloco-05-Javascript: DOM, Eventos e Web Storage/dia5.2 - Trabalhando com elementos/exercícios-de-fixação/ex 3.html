@@ -1,0 +1,38 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+</main>
+<script>
+
+  // 1.Crie um irmão para elementoOndeVoceEsta.
+  const pai = document.getElementById('pai') // armazenei pai em uma variável 
+  const irmaoElementoOndeVoceEsta = document.createElement('section'); // criei elemento section
+  irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta'; // coloquei um id para nova section
+  pai.appendChild(irmaoElementoOndeVoceEsta); // acrescentei essa nova section a pai
+
+  // 2. Crie um filho para elementoOndeVoceEsta .
+  const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+  const filhoDoElementoOndeVoceEsta = document.createElement('section');
+  filhoDoElementoOndeVoceEsta.id = 'filhoDoElementoOndeVoceEsta';
+  elementoOndeVoceEsta.appendChild(filhoDoElementoOndeVoceEsta);
+  console.log('filhoDoElementoOndeVoceEsta');
+
+  // 3. Crie um filho para primeiroFilhoDoFilho.
+  const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+  const filhoDoPrimeiroFilhoDoFilho = document.createElement('section');
+  primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+  console.log(filhoDoPrimeiroFilhoDoFilho);
+
+  // 4. A partir desse filho criado, acesse terceiroFilho.
+  const terceiroFilho = filhoDoPrimeiroFilhoDoFilho
+  .parentElement
+  .parentElement
+  .parentElement
