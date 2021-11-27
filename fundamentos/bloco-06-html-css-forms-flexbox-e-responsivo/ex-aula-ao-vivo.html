@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css-aula-ao-vivo.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="speaker-form-header" >
+    <h1>Submeter Palestra</h1>
+    <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+  </header>
+
+  <main>
+    <form action="" method="get">
+    <div>
+        <label for="full-name-id">Nome</label>
+        <input type="text" name="full-name" id="full-name-id" required>
+    </div>
+
+      <div>
+        <fieldset>
+          <legend>Tipo de palestra</legend>
+          <label for="talk-type-main-stage">Palco principal</label>
+          <input type="radio" name="talk-type" id="talk-type-main-stage" value="mainstage">
+  
+          <label for="talk-type-workshop">Workshop</label>
+          <input type="radio" name="talk-type" id="talk-type-workshop" value="workshop">
+        </fieldset>
+      </div>
+
+      <div>
+        <label for="t-shirt-size">Tamanho da camisa:</label>
+        <select name="t-shirt-size" id="t-shirt-size">
+          <option value="P">Pequeno</option>
+          <option value="M">Médio</option>
+          <option value="G">Grande</option>
+        </select>
+      </div>
+
+      <div>
+        <textarea name="abstract" id="abstract" cols="30" rows="10" placeholder="Explique o conteúdo da sua palestra">Resumo da Palestra</textarea>
+      </div>
+
+      <div>
+        <input type="checkbox" name="available" id="available" value="sim">
+        <label for="available">Confirmo que estou disponível na data do evento</label>
+      </div>
+
+
+
+
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
