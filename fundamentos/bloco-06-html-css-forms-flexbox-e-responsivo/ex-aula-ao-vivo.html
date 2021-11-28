@@ -14,14 +14,16 @@
   </header>
 
   <main>
-    <form action="" method="get">
-    <div>
-        <label for="full-name-id">Nome</label>
-        <input type="text" name="full-name" id="full-name-id" required>
-    </div>
+    <form action="" method="get" class="speaker-form">
+      <div class="form-row">
+        <div class="line-content">
+            <label for="full-name-id">Nome</label>
+            <input type="text" name="full-name" id="full-name-id" required>
+        </div>
+      </div>
 
-      <div>
-        <fieldset>
+      <div class="line-content">
+        <fieldset class="legacy-form-row">
           <legend>Tipo de palestra</legend>
           <label for="talk-type-main-stage">Palco principal</label>
           <input type="radio" name="talk-type" id="talk-type-main-stage" value="mainstage">
@@ -40,19 +42,17 @@
         </select>
       </div>
 
-      <div>
-        <textarea name="abstract" id="abstract" cols="30" rows="10" placeholder="Explique o conteúdo da sua palestra">Resumo da Palestra</textarea>
+      <div class="line-content">
+        <label for="abstract">Resumo da Palestra</label>
+        <textarea name="abstract" id="abstract" cols="30" rows="10" placeholder="Explique o conteúdo da sua palestra"></textarea>
       </div>
 
-      <div>
+      <div class="line-content">
         <input type="checkbox" name="available" id="available" value="sim">
         <label for="available">Confirmo que estou disponível na data do evento</label>
       </div>
 
-
-
-
-      <div>
+      <div class="line-content">
         <button type="submit">Enviar</button>
       </div>
     </form>
