@@ -1,17 +1,17 @@
 // Crie uma função que receba uma frase e retorne qual a maior palavra.
 
-const longestWord = text => {
-  let wordArray = text.split(' ');
-  let maxLength = 0;
-  let result = '';
+const returnLongestWord = string => {
+  let sentence = string.split(' ');
+  let largestWord = 0;
+  let finalWord = '';
 
-  for (let index = 0; index < wordArray.length; index +=1 ) {
-    if (wordArray[index].length > maxLength) {
-      maxLength = wordArray[index].length;
-      result = wordArray[index];
+  for (let index = 0; index < sentence.length; index +=1 ) {
+    if (sentence[index].length > largestWord) {
+      largestWord = sentence[index].length;
+      finalWord = sentence[index];
     }
   }
-  return result;
+  return finalWord;
 }
 
-console.log(longestWord("Antonio foi no banheiro e não sabemos o que aconteceu"));
+console.log(returnLongestWord("Frase gigante teste exercício da Trybe"));
