@@ -1,0 +1,23 @@
+// Objects.entries:
+
+// Retorna um array cujos elementos são também arrays para cada conjunto chave e valor do objeto.
+
+const coolestTvShow = {
+  name: "BoJack Horseman",
+  genre: "adult animation",
+  createdBy: "Raphael Bob-Waksberg",
+  favoriteCharacter: "Princess Carolyn",
+  quote: "Princess Carolyn always lands on her feet.",
+  seasons: 6,
+};
+
+console.log(Object.entries(coolestTvShow));
+
+// [
+//   [ 'name', 'BoJack Horseman' ],
+//   [ 'genre', 'adult animation' ],
+//   [ 'createdBy', 'Raphael Bob-Waksberg' ],
+//   [ 'favoriteCharacter', 'Princess Carolyn' ],
+//   [ 'quote', 'Princess Carolyn always lands on her feet.' ],
+//   [ 'seasons', 6 ]
+// ]
