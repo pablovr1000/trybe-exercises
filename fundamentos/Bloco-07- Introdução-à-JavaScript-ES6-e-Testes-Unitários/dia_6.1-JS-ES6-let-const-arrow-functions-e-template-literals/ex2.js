@@ -7,7 +7,10 @@
 const oddsAndEvens = [5, 3, 4, 8, 0, 1, 7, 2, 85, 15, 35, 23];
 
 const oddsAndEvensFunction = () => {
-  let array = oddsAndEvens.sort((a, b) => a - b);
+  let array = oddsAndEvens.sort((a, b) => {
+    console.log(a, b)
+    return a - b
+  });
     return array;
 }
 
