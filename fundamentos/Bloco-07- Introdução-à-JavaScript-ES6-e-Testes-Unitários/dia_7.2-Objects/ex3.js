@@ -58,15 +58,34 @@ const lesson3 = {
 
 // Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
 
-const newFunction = () => {
+const totalNumberOfStudents = () => {
   let number = 0;
   const acessaObj = Object.keys(allLessons); // ['lesson1', 'lesson2', 'lesson3']
   for (let index = 0; index < acessaObj.length; index += 1) {
-    let blambs = allLessons[acessaObj[index]]['numeroEstudantes'];
-    number += blambs
+    let students = allLessons[acessaObj[index]]['numeroEstudantes'];
+    number += students
   }
   return number;
 }
-console.log(newFunction());
+console.log(totalNumberOfStudents());
 
 // Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
+const checkValue = (obj, position) => {
+  return Object.values(obj)[position];
+}
+console.log(checkValue(lesson1, 0));
+
+// Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. Exemplo:
+
+const checkEntries = (obj, keyName, keyValue) => {
+  let blambs = Object.entries(obj);
+ 
+  for (let index in blambs) {
+    console.log(blambs[index])
+    if (blambs[index][0] === keyName && blambs[index][1] === keyValue) {
+      return true; 
+    }
+  }
+  return false;
+}
+console.log(checkEntries(lesson1, 'turno', 'Maria Clara'));
