@@ -56,6 +56,15 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - :white_check_mark: 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Testes unitÃ¡rios em JavaScript_
-- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- :white_check_mark: 7-2: _JavaScript ES6 - Objects_
+- :white_check_mark: 7-3: _Primeiros passos em Jest_
+- :white_check_mark: 7-4: _[Projeto - JavaScript Testes Unitários]()_
+
+##### Bloco 8: Higher Order Functions do JavaScript ES6
+
+- :white_check_mark: 8-1: _JavaScript ES6 - Introdução à Higher Order Functions_
+- :white_check_mark: 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- :white_check_mark: 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
+- :white_check_mark: 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
+- :white_check_mark: 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- :white_check_mark: 8-6: _[Projeto - Zoo functions]()_
