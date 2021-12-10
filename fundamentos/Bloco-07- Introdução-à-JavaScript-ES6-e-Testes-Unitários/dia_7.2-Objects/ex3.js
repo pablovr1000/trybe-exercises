@@ -78,14 +78,44 @@ console.log(checkValue(lesson1, 0));
 // Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. Exemplo:
 
 const checkEntries = (obj, keyName, keyValue) => {
-  let blambs = Object.entries(obj);
+  let accessObject = Object.entries(obj);
  
-  for (let index in blambs) {
-    console.log(blambs[index])
-    if (blambs[index][0] === keyName && blambs[index][1] === keyValue) {
+  for (let index in accessObject) {
+    if (accessObject[index][0] === keyName && accessObject[index][1] === keyValue) {
       return true; 
     }
   }
   return false;
 }
 console.log(checkEntries(lesson1, 'turno', 'Maria Clara'));
+
+// Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+const mathStudents = (obj) => {
+  let number = 0;
+  const acessaObj = Object.keys(obj); // ['lesson1', 'lesson2', 'lesson3']
+  for (let index in acessaObj) {
+    if (obj[acessaObj[index]].materia === 'Matemática') {
+      number += obj[acessaObj[index]].numeroEstudantes;
+    }
+  }
+  return number;
+}
+console.log('oi')
+console.log(mathStudents(allLessons));
+
+// Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5:
+
+const finalFunction = (obj, teacherName) => {
+  const completeObject = Object.values(obj);
+  const classes = []
+  let students = 0;
+  
+  for (let index in completeObject) {
+    if (allLessons[index].professor === teacherName) {
+      classes.push(allLessons[completeObject[index]].materia);
+      students += allLessons[completeObject[index]].numeroEstudantes;
+    }
+  }
+  return asnwer = {professor: teacherName; aulas: completeObject; estudantes: students};
+}
+console.log(finalFunction(allLessons, 'Maria Clara'));
