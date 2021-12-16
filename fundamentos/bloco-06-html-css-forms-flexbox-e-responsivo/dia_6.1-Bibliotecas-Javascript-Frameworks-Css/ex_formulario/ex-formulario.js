@@ -1,7 +1,7 @@
 window.onload = function() {
   createStateOptions(); // add função dos estados
 
-  const submitBotton = document.querySelector('.submit-button');
+  const submitBotton = document.querySelector('#submit-button');
   submitBotton.addEventListener('click', avoidSubmit);
 }
 
@@ -11,8 +11,8 @@ function avoidSubmit(event) { // tudo que ocorrer após o envio dos dados vai ac
   event.preventDefault(); // ao carregar a página ela não irá atualizar (que é o seu comportamento padrão)
   
   //validação de dados:
-  let answers = document.querySelector('.answers'); // peguei div para colocar os acertos
-  let wrongValues = document.querySelector('.wrongValues'); // peguei div para colocar os erros
+  let answers = document.querySelector('#answers'); // peguei div para colocar os acertos
+  let wrongValues = document.querySelector('#wrongValues'); // peguei div para colocar os erros
 
   inputsData = []; // quando a página carregar o inputData esvazia e quando cai na função se tiver algo ele preenche
   wrongValues.innerHTML = ''; // quando a página a div wrong esvazia e quando cai na função se tiver algo ela enche
@@ -25,26 +25,45 @@ function avoidSubmit(event) { // tudo que ocorrer após o envio dos dados vai ac
   let address = checkAddress();
   let city = checkCity();
   let house = checkHouse();
+  let role = checkRole();
+  let roleDescription = checkRoleDescription();
+  let textArea = checkTextArea();
+  let stateArea = state();
 
   if (inputsData.length > 0) {
     for (let xablau = 0; xablau < inputsData.length; xablau += 1) {
-      let listaWrongValues = document.createElement('ul'); // lista que vai na div com os erros
-      let items = document.createElement('li');
+      let items = document.createElement('p');
       items.innerText = inputsData[xablau];
       
-      wrongValues.appendChild(listaWrongValues);
-      listaWrongValues.appendChild(items);
+      wrongValues.appendChild(items);
     }
   } else {
-    let inputs = {name, date, email, cpf, address, city, house}; // objeto com todas as funções
+    let inputs = {name, date, email, cpf, address, city, house, role, roleDescription, textArea, stateArea}; // objeto com todas as funções
     for (let items in inputs) {
-      let inputsItems = document.createElement('li');
+      const form = document.querySelector('#cv-form');
+      form.innerHTML = '';
+      const h1 = document.querySelector('#h1');
+      h1.innerHTML = 'Informações enviadas com sucesso!';
+      const paragraph = document.querySelector('#p');
+      paragraph.innerHTML = '';
+      let inputsItems = document.createElement('p');
       inputsItems.innerText = inputs[items];
       answers.appendChild(inputsItems);
     }
   }
 }
 
+const clearButton = document.querySelector('#clear-button');
+clearButton.addEventListener('click', clearAllInputs);
+
+const allInputs = document.querySelectorAll('input');
+
+function clearAllInputs() {
+  for (let index = 0; index < allInputs.length; index += 1) {
+    allInputs[index].value = '';
+  }
+  document.querySelector('#resume');
+}
 
 function validateName() { // verifica nome;
 const name = document.querySelector('#name');
@@ -92,16 +111,20 @@ function checkDate() {
     } else {
       return inputDate.value;
     } 
+  } else {
+    inputsData.push('Insira a data o formato correto "dd/mm/aaaa"');
   }
 }
 
 function checkEmail() {
   const emailInput = document.querySelector('#email');
-  const correctEmail = emailInput.value.match(/\w+\@\w+\.\w+/g);
+  const correctEmail = emailInput.value.match(/^[a-z-0-9]+\@\w+\.\w+$/g);
   if (emailInput.value === '') { // typeof emailInput.value = string. Você não pode comparar uma string com 0.
     inputsData.push('E-mail vazio. Preencha.');
   } else if (!correctEmail) {
-    inputsData.push('Verifique os seus caracteres no campo de e-mail.');
+    inputsData.push('Email incorreto');
+  } else {
+    return emailInput.value;
   }
 }
 
@@ -110,8 +133,8 @@ function checkCPF() {
   const correctCPF = cpfInput.value.match(/\d\d\d\d\d\d\d\d\d\d\d/);
   const checkIfCPFIsANumber = cpfInput.value.match(/\d+/g);
 
-  if (checkIfCPFIsANumber === null) {
-    inputsData.push('CPF incorreto ou vazio.');
+  if (cpfInput.value === '') {
+    inputsData.push('Preencha o campo do CPF.');
   } else if (correctCPF < 11) {
     inputsData.push('CPF não atingiu o mínimo de dígitos'); 
   } else {
@@ -130,19 +153,55 @@ function checkAddress() {
 
 function checkCity() {
   const cityInput = document.querySelector('#city');
-  if (cityInput.value = '') {
+  if (cityInput.value === '') {
     inputsData.push('Campo de cidade vazio. Preencha.');
   } else {
     return cityInput.value;
   }
 }
-// ERRADOOOOOOOOOO
+
+
 function checkHouse() {
   const houseInput = document.getElementsByName('houseType');
-  houseInput.forEach((element) => {
-    if (!element.checked) {
-      inputsData.push('oi');
-      console.log(element.value)
+
+  for (let index = 0; index < houseInput.length; index += 1) {
+    if (houseInput[index].checked) {
+      return houseInput[index].value;
     }
-  })
+  }
+  if (!houseInput.checked) {
+    inputsData.push('Selecione o seu tipo de residência.');
+  }
+}
+
+function checkRole() {
+  const role = document.querySelector('#role').value;
+  if (role === '') {
+    inputsData.push('Preencha o campo "cargo"');
+  } else {
+    return role;
+  }
+}
+
+function checkRoleDescription() {
+  const roleDescription = document.querySelector('#roleDescription').value;
+  if (roleDescription === '') {
+    inputsData.push('Preencha o campo "Descrição de cargo"');
+  } else {
+    return roleDescription;
+  }
+}
+
+function checkTextArea() {
+  const textArea = document.querySelector('#resume').value;
+  if (textArea === '') {
+    inputsData.push('Preencha o campo de texto.');
+  } else {
+    return textArea;  
+  }
+}
+
+function state() {
+  const state = document.querySelector('#state');
+  return state.value;
 }
