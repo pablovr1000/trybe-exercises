@@ -8,7 +8,6 @@ const students = [
 function verifyGrades() {
   for (let i = 0; i < students.length; i += 1) {
     const student = students[i];
-    console.log(students[i])
     if (student.grade >= 60) {
       student.approved = 'Aprovado';
     } else {
