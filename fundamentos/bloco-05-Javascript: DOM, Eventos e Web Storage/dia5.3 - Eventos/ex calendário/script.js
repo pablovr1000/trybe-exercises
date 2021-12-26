@@ -113,15 +113,14 @@ function zoomOut(elemento) {
   elemento.target.style.fontWeight = '400';
 }
 
-
 // Exercício 7
 function task (string) {
   const tarefa = document.createElement('span');
   tarefa.innerText = string;
-  var myTasks = document.querySelector('.my-tasks');
+  let myTasks = document.querySelector('.my-tasks');
   myTasks.appendChild(tarefa);
 }
-task('alguma coisa')
+task('Estudar')
 
 // Exercício 8
 function taskColor(cor) {
@@ -155,3 +154,34 @@ function xablau(event) {
     event.target.style.color = 'rgb(119,119,119)';
   }
 }
+
+// Exercício bônus
+const taskInput = document.querySelector('#task-input');
+const btnAdd = document.querySelector('#btn-add');
+const taskList = document.querySelector('.task-list');
+
+btnAdd.addEventListener('click', () => {
+  if (taskInput.value.length > 0) {  
+    const li = document.createElement('li');
+    taskList.appendChild(li);
+    li.innerText = taskInput.value;
+    taskInput.value = '';
+  } else {
+    alert('Input vazio');
+  }
+});
+
+taskInput.addEventListener('keyup', function(event) {
+  const taskInput = document.querySelector('#task-input');
+  if (event.key === 'Enter') { // o key fala qual tecla eu apertei
+    if (taskInput.value === '') {
+      alert ('Adicione uma tarefa ao input');
+    } else {
+      const li = document.createElement('li');
+      const taskList = document.querySelector('.task-list');
+      li.innerText = taskInput.value;
+      taskList.appendChild(li);
+      taskInput.value = '';
+    }
+  }
+});

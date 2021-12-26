@@ -77,20 +77,20 @@
       changeInnerText();
       
       /* Crie uma função que modifique todo o texto da tag <p> para maiúsculo. */
-        function toUpperCase() {
-          let centerContent = document.getElementsByTagName('p')[0];
-          centerContent.innerText = centerContent.innerText.toUpperCase();
-        }
-        toUpperCase();
+      function toUpperCase() {
+        let centerContent = document.getElementsByTagName('p')[0];
+        centerContent.innerText = centerContent.innerText.toUpperCase();
+      }
+      toUpperCase();
 
       /*Crie uma função que exiba o conteúdo de todas as tags <p> no console.*/
-        function showContent() {
-          let paragraph = document.querySelectorAll('p');
-          for (let index = 0; index < paragraph.length; index += 1) {
-            console.log(paragraph[index].innerText);
-          }
+      function showContent() {
+        let paragraph = document.querySelectorAll('p');
+        for (let index = 0; index < paragraph.length; index += 1) {
+          console.log(paragraph[index].innerText);
         }
-        showContent();
+      }
+      showContent();
     </script>
   </body>
 </html>

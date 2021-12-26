@@ -105,3 +105,4 @@ const releasedInThe80s = books.some((element) => element.releaseYear >= 1980 && 
 console.log(releasedInThe80s);
 
 // 7 - Faça uma função que retorne true caso nenhum author tenha nascido no mesmo ano e false caso tenham nascido no mesmo ano.
+const bornInTheSameYear = books
