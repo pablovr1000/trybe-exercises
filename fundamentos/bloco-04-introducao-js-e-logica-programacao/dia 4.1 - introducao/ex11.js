@@ -3,9 +3,9 @@
 const valor = -4;
 
 if (valor > 0 ) {
-    console.log("positive");
+  console.log("positive");
 } else if (valor < 0 ) {
-    console.log("negativa");
+  console.log("negativa");
 } else {
-    console.log("zero");
+  console.log("zero");
 }

@@ -6,16 +6,15 @@ const anguloC = 30;
 
 
 if (anguloA > 0 && anguloB > 0 && anguloC > 0) {
-    let somaDosAngulos = anguloA + anguloB + anguloC;
-    if (somaDosAngulos === 180) {
-        console.log(true);
-    
-    } else {
-        console.log(false);
-    }
-    console.log('valor válido, porém soma diferente de 180');
+  let somaDosAngulos = anguloA + anguloB + anguloC;
+  if (somaDosAngulos === 180) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+  console.log('valor válido, porém soma diferente de 180');
 } else {
-    console.log('valor inválido');
+  console.log('valor inválido');
 }
 
 

@@ -12,5 +12,4 @@ console.log(typeof patientId);
 console.log(typeof isEnrolled);
 console.log(typeof patientInfo);
 console.log(typeof patientEmail);
-
 console.log(typeof patientAge);

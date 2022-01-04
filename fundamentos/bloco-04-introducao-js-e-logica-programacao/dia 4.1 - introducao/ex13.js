@@ -11,17 +11,17 @@ let xadrez = 'torre'.toLowerCase();
 // }
 
 switch (xadrez) {
-    case 'cavalo':
-        console.log('duas casas para frente ou trás seguido do movimento ou para direta ou esquerda de uma casa');
-        break;
-    case 'rei':
-        console.log('movimento para qualquer direção movendo apenas uma casa');
-        break;
-    case 'torre':
-        console.log('movimento para frente ou trás ou lados direto e esquerdo quantas casas achar necessário');
-        break;
-    default:
-        console.log('peça inválida');
-        break;
+  case 'cavalo':
+    console.log('duas casas para frente ou trás seguido do movimento ou para direta ou esquerda de uma casa');
+    break;
+  case 'rei':
+    console.log('movimento para qualquer direção movendo apenas uma casa');
+    break;
+  case 'torre':
+    console.log('movimento para frente ou trás ou lados direto e esquerdo quantas casas achar necessário');
+    break;
+  default:
+    console.log('peça inválida');
+    break;
 }
 

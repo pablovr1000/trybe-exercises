@@ -6,9 +6,9 @@ const valorB = 4;
 const valorC = 8;
 
 if (valorA % 2 === 0 || valorB % 2 === 0 || valorC % 2 === 0) {
-    console.log('true');
+  console.log('true');
 } else {
-    console.log('false');
+  console.log('false');
 }
 
 // outra forma de fazer:
