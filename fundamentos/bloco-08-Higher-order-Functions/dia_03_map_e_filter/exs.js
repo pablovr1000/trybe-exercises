@@ -103,3 +103,4 @@ const arrBooksOver60 = booksOver60.map((param) => param.name);
 
 // 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
 const bookWith3lettersNameAuthor = books.find((book) => book.author.name.match(/^(\w\.\s){3}/)).name
+
