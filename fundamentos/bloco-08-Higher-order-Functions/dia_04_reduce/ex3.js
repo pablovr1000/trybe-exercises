@@ -65,8 +65,8 @@ const books = [
 
 function reduceFunction(acc, book) {
   const age = book.releaseYear - book.author.birthYear;
-  return Math.round(acc += age / books.length);
+  return acc += age; 
 }
 
-const teste = books.reduce(reduceFunction, 0);
-console.log(teste)
+const allAges = books.reduce(reduceFunction, 0);
+const allAgesAverage = allAges / books.length;

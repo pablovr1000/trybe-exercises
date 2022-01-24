@@ -51,7 +51,7 @@ const books = [
   },
   {
     id: 6,
-    name: 'O Chamado de Cthulhu',
+    name: 'O Chamado de Cthulhua',
     genre: 'Terror',
     author: {
       name: 'H. P. Lovecraft',
@@ -64,12 +64,12 @@ const books = [
 // 4 - Encontre o livro com o maior nome.
 
 function reduceFunction(acc, book) {
-  console.log(book.name)
+  // console.log(book.name)
   if (acc.name.length > book.name.length) {
-    book.name = acc.name;
+    return acc; // se o acc for maior ele retorna
   }
-  return book.name;
+  return book; // se o book for maior ele retorna
 }
 
-const teste = books.reduce(reduceFunction);
-console.log(teste)
+const largestBookName = books.reduce(reduceFunction);
+console.log(largestBookName)

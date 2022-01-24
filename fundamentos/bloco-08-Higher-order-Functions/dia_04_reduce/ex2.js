@@ -68,7 +68,7 @@ function reduceFunction(acc, book, index) {
   }
   return acc += `${book.author.name}, `;
 }
-const teste = books.reduce(reduceFunction, '');
-console.log(teste);
+const searchAuthor = books.reduce(reduceFunction, '');
+console.log(searchAuthor);
 
 // o return no reduce é passar o acc para a próxima posição. Se você não passar tudo que foi feito antes se perde.
