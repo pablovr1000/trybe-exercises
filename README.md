@@ -39,11 +39,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - :white_check_mark: 5-2: _JavaScript - _Trabalhando com elementos_
 - :white_check_mark: 5-3: _JavaScript - _Eventos_
 - :white_check_mark: 5-4: _JavaScript - _Web Storage_
-- [ ] 5-5: _[Projeto - Meme Generator]()_
+- :white_check_mark: 5-5: _[Projeto - Meme Generator]()_
 - :white_check_mark: 5-6: _[Projeto - Arte com Pixels]()_
 - :white_check_mark: 5-7: _[Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+- :white_check_mark: 5-7: _[Projeto - Adivinhe a Cor]()_
+- :white_check_mark: 5-7: _[Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS avançado
 
@@ -64,7 +64,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - :white_check_mark: 8-1: _JavaScript ES6 - Introdução à Higher Order Functions_
 - :white_check_mark: 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [ ] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
-- [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-6: _[Projeto - Zoo functions]()_
+- :white_check_mark: 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
+- :white_check_mark: 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
+- :white_check_mark: 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- :white_check_mark: 8-6: _[Projeto - Zoo functions]()_
