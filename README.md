@@ -71,30 +71,30 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [ ] 9-1: _JavaScript AssÃ­ncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- :white_check_mark: 9-1: _JavaScript Assíncrono e Callbacks_
+- :white_check_mark: 9-2: _JavaScript Promises_
+- :white_check_mark: 9-3: _[Projeto - Carrinho de Compras]()_
 
 ##### Bloco 10: Jest
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes AssÃ­ncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking]()_
+- :white_check_mark: 10-1: _Primeiros passos no Jest_
+- :white_check_mark: 10-2: _Jest - Testes Assíncronos_
+- :white_check_mark: 10-3: _Jest - Simulando comportamentos_
+- :white_check_mark: 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 11: IntroduÃ§Ã£o - React
+##### Bloco 11: Introdução - React
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- :white_check_mark: 11-1: _'Hello, world!' no React!_
+- :white_check_mark: 11-2: _Componentes React_
+- :white_check_mark: 11-3: _[Projeto - Solar System]()_
 
 ##### Bloco 12: React
 
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulÃ¡rios no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- :white_check_mark: 12-1: _Components com estado_
+- :white_check_mark: 12-2: _Eventos e formulÃ¡rios no React_
+- :white_check_mark: 12-3: _[Tryunfo Project]()_
 
 ##### Bloco 13: React
 
