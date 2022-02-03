@@ -31,7 +31,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - :white_check_mark: 4-2: _JavaScript - Array e loop For_
 - :white_check_mark: 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - :white_check_mark: 4-4: _JavaScript - Objetos e funções_
-- :white_check_mark: 4-5: _[Projeto - Playground Functions]()_
+- :white_check_mark: 4-5: _[Projeto - Playground Functions](https://github.com/Thisislauralima/my-projects/tree/playground-functions-project)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -42,7 +42,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - :white_check_mark: 5-5: _[Projeto - Meme Generator]()_
 - :white_check_mark: 5-6: _[Projeto - Arte com Pixels]()_
 - :white_check_mark: 5-7: _[Projeto - Lista de tarefas](https://github.com/Thisislauralima/my-projects/tree/to-do-list-project)_
-- :white_check_mark: 5-7: _[Projeto - Adivinhe a Cor]()_
+- :white_check_mark: 5-7: _[Projeto - Adivinhe a Cor](https://github.com/Thisislauralima/my-projects/tree/pic-color-guess-project)_
 - :white_check_mark: 5-7: _[Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS avançado
@@ -58,7 +58,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - :white_check_mark: 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - :white_check_mark: 7-2: _JavaScript ES6 - Objects_
 - :white_check_mark: 7-3: _Primeiros passos em Jest_
-- :white_check_mark: 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- :white_check_mark: 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/Thisislauralima/my-projects/tree/unit-tests-project)_
 
 ##### Bloco 8: Higher Order Functions do JavaScript ES6
 
