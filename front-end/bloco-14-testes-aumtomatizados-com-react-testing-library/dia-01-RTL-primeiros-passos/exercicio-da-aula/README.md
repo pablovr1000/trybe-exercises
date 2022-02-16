@@ -9,6 +9,3 @@ Usando assincronicidade, escreva um teste que verifica se o jogo com o texto `Mi
 #### Exercício 3
 Na home do projeto, após o carregamento da lista de jogos, clique no link `Ver detalhes` do segundo jogo da lista.
 E verifique se a tela de detalhes exibe as informações `Release Year` e `Sales`, do jogo correspondente.
-
-## Ao final
-A atividade será finalizada de forma síncrona.
