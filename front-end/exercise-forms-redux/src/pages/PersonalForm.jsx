@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Input from '../components/Input';
 import Button from '../components/Button';
 import Select from '../components/Select';
-import setPersonal from '../redux/actions';
+import { setPersonal } from '../redux/actions';
 
 class PersonalForm extends Component {
   constructor() {
@@ -31,7 +31,6 @@ class PersonalForm extends Component {
   render() {
     const { nome, email, cpf, endereco, cidade, estado } = this.state;
     const { personal } = this.props;
-    console.log(setPersonal);
     const states = [
       'Rio de Janeiro',
       'Minas Gerais',

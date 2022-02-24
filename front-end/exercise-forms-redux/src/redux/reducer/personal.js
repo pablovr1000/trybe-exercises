@@ -9,7 +9,7 @@ const INITIAL_STATE = {
   },
 };
 
-const myReducer = (state = INITIAL_STATE, action) => {
+const personalReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
   case 'PERSONAL_ACTION':
     return {
@@ -21,4 +21,4 @@ const myReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export default myReducer;
+export default personalReducer;

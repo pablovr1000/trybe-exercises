@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-  personal: {
+  professional: {
     curriculo: '',
     cargo: '',
     descricao: '',
