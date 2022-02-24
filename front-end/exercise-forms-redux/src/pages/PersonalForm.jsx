@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Input from '../components/Input';
 import Button from '../components/Button';
 import Select from '../components/Select';
+import setPersonal from '../redux/actions';
 
 class PersonalForm extends Component {
   constructor() {
@@ -27,6 +30,8 @@ class PersonalForm extends Component {
 
   render() {
     const { nome, email, cpf, endereco, cidade, estado } = this.state;
+    const { personal } = this.props;
+    console.log(setPersonal);
     const states = [
       'Rio de Janeiro',
       'Minas Gerais',
@@ -84,11 +89,26 @@ class PersonalForm extends Component {
         <Button
           type="button"
           label="Enviar"
-          onClick={ () => console.log('Ao clicar, envie a informação do formulário') }
+          onClick={ () => personal({
+            nome,
+            email,
+            cpf,
+            endereco,
+            cidade,
+            estado,
+          }) }
         />
       </fieldset>
     );
   }
 }
 
-export default PersonalForm;
+PersonalForm.propTypes = {
+  personal: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  personal: (payload) => dispatch(setPersonal(payload)),
+});
+
+export default connect(null, mapDispatchToProps)(PersonalForm);

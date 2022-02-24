@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
-import myReducer from './reducers';
+import personalReducer from './personal';
+import professionalReducer from './professional';
 
-const rootReducer = combineReducers({ myReducer });
+const rootReducer = combineReducers({ professionalReducer, personalReducer });
 
 export default rootReducer;

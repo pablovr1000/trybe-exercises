@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Input from '../components/Input';
 import TextArea from '../components/TextArea';
 import Button from '../components/Button';
+import setProfessional from '../redux/actions';
 
 class ProfessionalForm extends Component {
   constructor() {
@@ -22,6 +25,7 @@ class ProfessionalForm extends Component {
 
   render() {
     const { curriculo, cargo, descricao } = this.state;
+    const { professional } = this.props;
     return (
       <fieldset>
         <TextArea
@@ -50,11 +54,23 @@ class ProfessionalForm extends Component {
         />
         <Button
           label="enviar"
-          onClick={ () => console.log('Envia as informações para a store') }
+          onClick={ () => professional({
+            curriculo,
+            cargo,
+            descricao,
+          }) }
         />
       </fieldset>
     );
   }
 }
 
-export default ProfessionalForm;
+ProfessionalForm.propTypes = {
+  professional: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  professional: (payload) => dispatch(setProfessional(payload)),
+});
+
+export default connect(null, mapDispatchToProps)(ProfessionalForm);
