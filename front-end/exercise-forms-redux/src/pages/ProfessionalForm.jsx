@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Input from '../components/Input';
 import TextArea from '../components/TextArea';
 import Button from '../components/Button';
@@ -52,14 +53,16 @@ class ProfessionalForm extends Component {
           value={ descricao }
           required
         />
-        <Button
-          label="enviar"
-          onClick={ () => professional({
-            curriculo,
-            cargo,
-            descricao,
-          }) }
-        />
+        <Link to="/formdisplay">
+          <Button
+            label="enviar"
+            onClick={ () => professional({
+              curriculo,
+              cargo,
+              descricao,
+            }) }
+          />
+        </Link>
       </fieldset>
     );
   }

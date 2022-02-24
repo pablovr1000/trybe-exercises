@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Input from '../components/Input';
 import Button from '../components/Button';
 import Select from '../components/Select';
@@ -85,18 +86,20 @@ class PersonalForm extends Component {
           name="estado"
           options={ states }
         />
-        <Button
-          type="button"
-          label="Enviar"
-          onClick={ () => personal({
-            nome,
-            email,
-            cpf,
-            endereco,
-            cidade,
-            estado,
-          }) }
-        />
+        <Link to="/professionalForm">
+          <Button
+            type="button"
+            label="Enviar"
+            onClick={ () => personal({
+              nome,
+              email,
+              cpf,
+              endereco,
+              cidade,
+              estado,
+            }) }
+          />
+        </Link>
       </fieldset>
     );
   }

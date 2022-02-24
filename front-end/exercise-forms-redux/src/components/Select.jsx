@@ -44,8 +44,12 @@ Select.propTypes = {
   options: PropTypes.arrayOf(
     PropTypes.string,
   ).isRequired,
-  defaultValue: PropTypes.string.isRequired,
-  defaultOption: PropTypes.string.isRequired,
+  defaultValue: PropTypes.string,
+  defaultOption: PropTypes.string,
+};
+Select.defaultProps = {
+  defaultValue: '',
+  defaultOption: '',
 };
 
 export default Select;
