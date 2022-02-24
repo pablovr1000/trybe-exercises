@@ -20,6 +20,7 @@ class FormDataDisplay extends Component {
         estado,
       },
     } } = this.props;
+    console.log(this.props);
     return (
       <div>
         <h2>Dados enviados</h2>
@@ -81,20 +82,3 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps)(FormDataDisplay);
-
-/* personalReducer:
-personal:
-cidade: ""
-cpf: ""
-email: ""
-endereco: ""
-estado: ""
-nome: ""
-[[Prototype]]: Object
-[[Prototype]]: Object
-professionalReducer:
-professional:
-cargo: ""
-curriculo: ""
-descricao: ""
-*/
