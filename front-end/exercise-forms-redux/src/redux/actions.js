@@ -1,3 +1,9 @@
-export const PERSONAL_ACTION = 'PERSONAL_ACTION';
+const setPersonal = (payload) => ({
+  type: 'PERSONAL_ACTION', payload,
+});
 
-export const setPersonal = (payload) => ({}) 
+export default setPersonal;
+/* export const setProfessional = (payload) => ({
+  type: 'PROFESSIONAL_ACTION', payload,
+});
+ */

@@ -1,17 +1,21 @@
 const INITIAL_STATE = {
   nome: '',
-  email: '',
+/*   email: '',
   cpf: '',
   endereco: '',
   cidade: '',
-  estado: '',
+  estado: '', */
 };
 
 const myReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
   case 'PERSONAL_ACTION':
-    return { state: action.state };
+    return {
+      nome: action.payload.nome,
+    };
   default:
     return state;
   }
 };
+
+export default myReducer;
